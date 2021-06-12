@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UFT-8">
+        <title>Snaker</title>
+        <script>
+                
+                var n, y, x, i;
+
+                x = prompt("Hãy nhập vào số lượng các phần tử");
+
+                var xN = (x);
+
+                if (xN<10){
+                alert("Lỗi");
+                }
+                else{
+                for(int = y= 1; y<=xN; y++){
+    
+                n = prompt("Phần tử số " + y +" là: ");
+         
+                s = 0;
+
+                var nN = parseInt(n);
+
+                for(int = i =1; i < nN; i++){
+                if(nN%i == 0){
+                s = s +i;
+                }
+            }
+                if(s==n){
+                document.write(n + " là số hoàn hảo <br/>"  );
+            }
+                else{
+                document.write(n + " không phải là số hoàn hảo <br/>");
+            }
+                
+            
+            
+    }
+}
+
+            
+
+        </script>
+    </head>
+</html>
