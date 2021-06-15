@@ -6,42 +6,40 @@
         <script>
                 
                 var n, y, x, i;
-
+                var kin = true;
                 x = prompt("Hãy nhập vào số lượng các phần tử");
 
-                var xN = (x);
+                n = new Array();
 
-                if (xN<10){
+                if (x<10){
                 alert("Lỗi");
                 }
                 else{
-                for(int = y= 1; y<=xN; y++){
+                for(y = 0; y<x; y++){
     
-                n = prompt("Phần tử số " + y +" là: ");
-         
-                s = 0;
-
-                var nN = parseInt(n);
-
-                for(int = i =1; i < nN; i++){
-                if(nN%i == 0){
-                s = s +i;
-                }
-            }
-                if(s==n){
-                document.write(n + " là số hoàn hảo <br/>"  );
-            }
-                else{
-                document.write(n + " không phải là số hoàn hảo <br/>");
-            }
+                n[y] = prompt("Phần tử số " + y +" là: ");
                 
-            
+                }
+                document.write(" Mảng A gồm " + x + " phần tử là: ");
+                document.write(n + "<br>");
+                for(z=0; z<x; z++){
+                    f = n[z];
+                    s= 0;
+                    fF = parseInt(f);
+                    for(i = 0; i< f; i++){
+                        if(f%i==0){
+                        s = s +i;
+                        }
+                    }
+                     if(s==f){
+                         document.write(f + " là số hoàn hảo <br/>");
+                     }   
+                     else{
+                         document.write(f + " không phải là số hoàn hảo <br/>");
+                     }
+                }
             
     }
-}
-
-            
-
         </script>
     </head>
 </html>
